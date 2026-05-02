@@ -5,17 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blaster — Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRHEE0LE36"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VRHEE0LE36');
+  </script>
 </head>
 <body>
 
   <div class="project-header">
     <a class="back-link" href="index.html">← Back</a>
-    <h1>Blaster</h1>
+    <h1>A Better Nerf Dart Blaster</h1>
+    <span class="project-date">2024</span>
   </div>
   <main class="media-section">
 
-    <div class="section-label">About This Project</div>
-    <p class="project-blurb">Project description placeholder. Describe what this project is, what it does, and why you built it.</p>
+    <div class="section-label section-label--prominent">About This Project</div>
+    <p class="project-blurb">The disappointing low power, high cost status quo of modern dart blasters was my motivation for building my own Nerf dart machine.
+      It feature significantly larger 3D printed flywheels for higher angular momentum, edge velocity, and dart contact area, spun by brushless drone motors. Darts are pushed into the flywheel chamber using a Scotch yoke mechanism,
+    and the behavior of the entire unit is moderated by a custom program running on an Arduino Nano. 
+    </p>
 
     <!-- Videos: alphabetical (leading numbers sort 1, 2, 3) -->
     <div class="section-label">Video</div>
@@ -26,7 +38,7 @@
           <source src="blaster/1 loading demo.MOV" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Caption placeholder for loading demo.</p>
+        <p class="caption">Clip receptacle and release mechanism in action</p>
       </div>
 
       <div class="media-item">
@@ -34,7 +46,7 @@
           <source src="blaster/2 firing demo.mov" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Caption placeholder for firing demo.</p>
+        <p class="caption">Firing: chamber view</p>
       </div>
 
       <div class="media-item">
@@ -42,7 +54,7 @@
           <source src="blaster/3 impact demo.MOV" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Caption placeholder for impact demo.</p>
+        <p class="caption">Firing: wielder POV</p>
       </div>
 
     </div>
@@ -53,57 +65,65 @@
 
       <div class="media-item">
         <img src="blaster/blaster CAD 2.png" alt="Blaster CAD drawing 2">
-        <p class="caption">Caption placeholder for blaster CAD 2.</p>
+        <p class="caption">Open view of the blaster CAD. Seen left to right are the barrel, flywheels, dart inlet guide, scotch yoke pusher, batteries, control knobs, and a dual trigger geometry built into the handle.</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/blaster CAD.png" alt="Blaster CAD drawing">
-        <p class="caption">Caption placeholder for blaster CAD.</p>
+        <p class="caption">Full CAD model. Every last piece is designed to 3D print without supports</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5495.jpg" alt="Blaster — IMG_5495">
-        <p class="caption">Caption placeholder for IMG_5495.</p>
+        <p class="caption">Chamber view from bottom</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5497.jpg" alt="Blaster — IMG_5497">
-        <p class="caption">Caption placeholder for IMG_5497.</p>
+        <p class="caption">Left knob adjust fire rate, the right knob controls flywheel RPM. The red button switches an aiming laser</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5498.jpg" alt="Blaster — IMG_5498">
-        <p class="caption">Caption placeholder for IMG_5498.</p>
+        <p class="caption">The construction is very solid with multiple overlaps and redundant screws</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5499.jpg" alt="Blaster — IMG_5499">
-        <p class="caption">Caption placeholder for IMG_5499.</p>
+        <p class="caption">The transparent PETG side plates reveal some of the electronics</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5502.jpg" alt="Blaster — IMG_5502">
-        <p class="caption">Caption placeholder for IMG_5502.</p>
+        <p class="caption">The main power switch, despite its size, is rated for only 5A, while each motor can consume significantly more. For this reason,
+          The power switch only activates a pair of 10A relays which handle the brunt of the system power. 
+        </p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5504.jpg" alt="Blaster — IMG_5504">
-        <p class="caption">Caption placeholder for IMG_5504.</p>
+        <p class="caption">Top down view of the chamber. A trapdoor style access port is held in place by magnets</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5516.jpg" alt="Blaster — IMG_5516">
-        <p class="caption">Caption placeholder for IMG_5516.</p>
+        <p class="caption">Visible are the two brushless motor speed controllers along with their power and signal wires, and a small DC motor on the left which runs the pushing mechanism</p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5517.jpg" alt="Blaster — IMG_5517">
-        <p class="caption">Caption placeholder for IMG_5517.</p>
+        <p class="caption">The rat's nest of wires and modules in the rear compartment animate the blaster. Included are the Arduino Nano, a 5V regulator for, a voltage booster for the
+          pushing motors, as well as MOSFET motor driver for PWM control, and the aforementioned power relays, on/off switch, and adjustment potentiometers. 
+        </p>
       </div>
 
       <div class="media-item">
         <img src="blaster/IMG_5518.jpg" alt="Blaster — IMG_5518">
-        <p class="caption">Caption placeholder for IMG_5518.</p>
+        <p class="caption">The blaster is powered by three 18650 li-ion batteries in series. Each is capable of 30A, and with a nominal voltage of 3.7V, the battery pack
+          can deliver (3.7 * 3) * 30 = 333 watts of power. When the main power switch is pressed, it immediately connects the battery to the onboard 5V regulator, which in turn
+          powers up the arduino, switches the relays, and powers the laser should it be on. The relays are then able to safely and reliably conduct the full power of the battery
+          to both the flywheel and dart pushing motors. 
+        </p>
       </div>
 
     </div>

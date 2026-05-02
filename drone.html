@@ -5,17 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drone — Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRHEE0LE36"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VRHEE0LE36');
+  </script>
 </head>
 <body>
 
   <div class="project-header">
     <a class="back-link" href="index.html">← Back</a>
-    <h1>Drone</h1>
+    <h1>Modular 3D Printed (First-Person-View) Drone</h1>
+    <span class="project-date">2025</span>
   </div>
   <main class="media-section">
 
-    <div class="section-label">About This Project</div>
-    <p class="project-blurb">Project description placeholder. Describe what this project is, what it does, and why you built it.</p>
+    <div class="section-label section-label--prominent">About This Project</div>
+    <p class="project-blurb">For their power, maneuverability, and the mechanical simplicity with which they achieve it, drones have earned a special place in my heart.
+      The consumer drone market however, is dominated by fragile, technology laden and impractical to replace plastic shells, or rugged CNC cut carbon fiber plates. 
+      In my approach to designing a drone, I sought the best of both worlds; the mechanical simplicity and ease of assembly of carbon plates, and the versatility of 3D
+      printable plastic parts. The core principle of the design is sandwiching four tubular arms between two plates, and though it can be explained in a single line,
+      there are quite a few benefits from this construction. Not only does the tubular arm profile allow the motor cables to run safely down the arms, it results in a
+      significantly more rigid arm than a flat bar of the same weight. Further, since each arm is attached with four screws, replacing a broken one takes a few minutes,
+      and the four arms together behave as standoffs to which the plates are clamped, resulting in a drone body that is much more rigid than one single plate. Higher
+      rigidity means lower susceptibility to vibrations, which means cleaner flight characteristics. 
+    </p>
 
     <!-- Videos: alphabetical -->
     <div class="section-label">Video</div>
@@ -26,7 +43,7 @@
           <source src="drone/flips.mov" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Caption placeholder for flips.</p>
+        <p class="caption">Demonstrating a few basic maneuvers</p>
       </div>
 
       <div class="media-item">
@@ -34,7 +51,7 @@
           <source src="drone/flyby.mov" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Caption placeholder for flyby.</p>
+        <p class="caption">Cruising speed flyby</p>
       </div>
 
       <div class="media-item">
@@ -42,7 +59,7 @@
           <source src="drone/skyrocket.mov" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Caption placeholder for skyrocket.</p>
+        <p class="caption">High throttle punch test</p>
       </div>
 
     </div>
@@ -53,57 +70,66 @@
 
       <div class="media-item">
         <img src="drone/drone CAD.png" alt="Drone CAD drawing">
-        <p class="caption">Caption placeholder for drone CAD.</p>
+        <p class="caption">Drone design in CAD</p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5452.jpg" alt="Drone — IMG_5452">
-        <p class="caption">Caption placeholder for IMG_5452.</p>
+        <p class="caption">The black plate is printed in Polycarbonate, while the arms are made of glass fiber filled nylon</p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5453.jpg" alt="Drone — IMG_5453">
-        <p class="caption">Caption placeholder for IMG_5453.</p>
+        <p class="caption">Impact prone parts of the drone; front camera, rear antenna block, and ends of the arms are protected by soft red TPU</p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5454.jpg" alt="Drone — IMG_5454">
-        <p class="caption">Caption placeholder for IMG_5454.</p>
+        <p class="caption">front view</p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5456.jpg" alt="Drone — IMG_5456">
-        <p class="caption">Caption placeholder for IMG_5456.</p>
+        <p class="caption">The bottom plate profile is a mirror of the top, except the only ventilation is beneath the video transmitter module, known for producing heat</p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5469.jpg" alt="Drone — IMG_5469">
-        <p class="caption">Caption placeholder for IMG_5469.</p>
+        <p class="caption">Internal components of the drone: Camera, voltage spike filtering capacitor, flight computer & motor controller are stacked together, video transmitter, 
+          and finally the video transmission and radio control receiving antennas. 
+        </p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5470.jpg" alt="Drone — IMG_5470">
-        <p class="caption">Caption placeholder for IMG_5470.</p>
+        <p class="caption">Internals overhead view</p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5473.jpg" alt="Drone — IMG_5473">
-        <p class="caption">Caption placeholder for IMG_5473.</p>
+        <p class="caption">The TPU end block simultaneously holds the video antenna, the receiver antenna and allows power wires to pass through</p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5475.jpg" alt="Drone — IMG_5475">
-        <p class="caption">Caption placeholder for IMG_5475.</p>
+        <p class="caption">A crucial step in the assembly is to equip the motors and motor driver board with bullet connectors. This way, if an arm must be replaced
+          no extra soldering is required. In the case of a violent impact where the arm is not just fractured, but flung away from the drone, the connectors will disconnect
+          before the solder pads on the driver board break, preventing permanent damage to the expensive part. (This is a good reason to use connectors even on carbon plate builds)
+        </p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5487.jpg" alt="Drone — IMG_5487">
-        <p class="caption">Caption placeholder for IMG_5487.</p>
+        <p class="caption">At the outer ends of the arms the motors are housed in vented cups. The enclosed design mitigates damage to the motors 
+          in a crash, as well as the entry of dust and dirt. Meanwhile the vent allow the cooling required by these motors, as at full throttle 
+        they dissipate many dozens of watts of heat. </p>
       </div>
 
       <div class="media-item">
         <img src="drone/IMG_5488.jpg" alt="Drone — IMG_5488">
-        <p class="caption">Caption placeholder for IMG_5488.</p>
+        <p class="caption">An afterthought: A long armed prototype with significantly smaller, lower RPM motors spinning larger, low pitch, two blade propellers, with the goal
+          of improving flight time and range by increasing the drone's efficiency. Despite its wingspan, it is weaker and more sluggish the original build, but does indeed
+        live up to its purpose.</p>
       </div>
 
     </div>
