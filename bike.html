@@ -24,7 +24,11 @@
   <main class="media-section">
 
     <div class="section-label section-label--prominent">About This Project</div>
-    <p class="project-blurb">Project description placeholder. Describe what this project is, what it does, and why you built it.</p>
+    <p class="project-blurb">Money was tight, but need for speed was at an all time high. In this project, I took a rather unorthodox approach to converting an old
+      pedal bike into an e-bike. Instead of the complicated process of installing a hub motor in the rear wheel, or delivering power via belts or chains, the idea was to
+      seat a powerful brushless motor inside 3D printed friction drum, and force into firm contact with the rear tire using 3D printed TPU spring, while a system of custom
+      parts and brackets secured the batteries and motor controller to the frame. 
+    </p>
 
     <!-- Videos: alphabetical -->
     <div class="section-label">Video</div>
@@ -35,7 +39,9 @@
           <source src="bike/IMG_2240.MOV" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Video #1</p>
+        <p class="caption">No load full power rev test. With myself as the (at the time) 120 lb rider, the bike was able to reach 30mph, albeit not without serious heating
+          in the motor. 
+        </p>
       </div>
 
       <div class="media-item">
@@ -43,7 +49,7 @@
           <source src="bike/IMG_2239.MOV" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Video #2</p>
+        <p class="caption">Fully assembled. Visible is are the batteries, motor controller, motor cables, friction drum, and the TPU springs that press it against the tire.</p>
       </div>
 
     </div>
@@ -54,47 +60,65 @@
 
       <div class="media-item">
         <img src="bike/bike batt.png" alt="Bike — battery">
-        <p class="caption">Photo #1</p>
+        <p class="caption">The bike is powered by 6 11.1V lithium ion batteries in 2 series, 3 parallel configuration, for a nominal voltage of 24V and a total capacity of
+          350 watt hours, and more amperage than the motor could ever need. Simultaneous charging of all the batteries was made possible with a custom made wire harness
+        that connected to all of the individual charging leads on the batteries at once.  </p>
       </div>
 
       <div class="media-item">
         <img src="bike/bike standing.png" alt="Bike — standing">
-        <p class="caption">Photo #2</p>
+        <p class="caption">Parked prototype 
+        </p>
       </div>
 
       <div class="media-item">
         <img src="bike/bike pwm test.png" alt="Bike — PWM test">
-        <p class="caption">Photo #3</p>
+        <p class="caption">Initial tests were conducted using a PWM signal generator to communicate with the motor driver. Later this was replaced with a custom designed and printed
+          hall effect thumb switch which was bolted onto the handlebar and whose position was read, then converted to PWM by an Arduino Nano microcontroller.</p>
       </div>
 
       <div class="media-item">
         <img src="bike/bike cad.png" alt="Bike — CAD">
-        <p class="caption">Photo #4</p>
+        <p class="caption">Full CAD assembly. The motor and drum are mounted on a swing arm, constrained to rotate from a rigid point on the bike frame, and pressed into 
+          the tire by arched TPU springs, which are slightly curved to ensure predictable behavior. 
+        </p>
       </div>
 
       <div class="media-item">
         <img src="bike/drum 1.png" alt="Bike — drum 1">
-        <p class="caption">Photo #5</p>
+        <p class="caption">The friction drum went through a number of iteration before it reached a satisfying level of durability. The concave shape is meant to increase contact
+          area by conforming more to the curvature of the tire's profile. While this was a sound idea, finding a drum surface pattern proved much more difficult. The ridges on this
+          initial design wore out almost instantly. 
+        </p>
       </div>
 
       <div class="media-item">
         <img src="bike/drum 2.png" alt="Bike — drum 2">
-        <p class="caption">Photo #6</p>
+        <p class="caption">Low profile dimples faired significantly better, but were still worn down to nubs with a few hundred meters of driving</p>
       </div>
 
       <div class="media-item">
         <img src="bike/drum 3 final.png" alt="Bike — drum 3 final">
-        <p class="caption">Photo #7</p>
+        <p class="caption">The winning pattern was my best recreation of the tire's own tread pattern, but as a negative. This design increased resistance to wear because of
+          better balance between raised and lowered areas on the drum pattern, and by shifting the transfer of torque away from pure friction and introduced some proper "meshing"
+          action. This drum, printed in carbon fiber PETG, worked so well that the eventual demise of the bike was not a drum failure, but such severe heating in the motor that the
+          coil insulation melted and shorted out the motor driver, destroying both the most expensive parts in one event. In retrospect, an improvement to the drum design could prevent
+          even this failure mode. Since the motor must spin at many hundreds of RPM, designing an axial fan directly into one end of the drum would cool the motor harder the faster it spins.
+        </p>
       </div>
 
       <div class="media-item">
         <img src="bike/spring 1.png" alt="Bike — spring 1" class="img-fit">
-        <p class="caption">Photo #8</p>
+        <p class="caption">Two TPU spring design were tested. The slit prevents sideways buckling but sacrificed too much force. The balancing act was to provide just enough tension
+          to ensure that the drum doesn't slip excessively against the tire, but not so much that the motor is needless stressed.
+        </p>
       </div>
 
       <div class="media-item">
         <img src="bike/spring 2.png" alt="Bike — spring 2" class="img-fit">
-        <p class="caption">Photo #9</p>
+        <p class="caption">A simple compliant arc was the solution. Extremely simple and buckling could be controlled by increasing the thickness. The optimization for spring force
+          would have been a matter of trial and error, but during testing I found that installing both prototypes together resulted in an excellent tension. 
+        </p>
       </div>
 
     </div>
