@@ -35,7 +35,9 @@
           <source src="car/interface demo.mov" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Video #1</p>
+        <p class="caption">User interface demo. A single rotary encoder is used to cycle through three values, the target distance D, the time in which it should be
+          covered T, and the left / right trim value, or balance is represented by B. 
+        </p>
       </div>
 
       <div class="media-item">
@@ -43,7 +45,9 @@
           <source src="car/run demo.mov" type="video/mp4">
           Your browser does not support this video format.
         </video>
-        <p class="caption">Video #2</p>
+        <p class="caption">Program trigger bench test. The motors run for exactly 5 seconds as the parameters request. These motors were sourced with magnetic encoders,
+          which allows an onboard microcontroller to count the total revolutions, calculate the distance traveled using wheel diameter.  
+        </p>
       </div>
 
     </div>
@@ -54,57 +58,68 @@
 
       <div class="media-item">
         <img src="car/car CAD.png" alt="Car CAD drawing">
-        <p class="caption">Photo #1</p>
+        <p class="caption">Project CAD. The entire assembly is built around two aluminum extrusions in order to keep the wheelbase square. </p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5409.jpg" alt="Car — IMG_5409">
-        <p class="caption">Photo #2</p>
+        <p class="caption">3D printed brackets clamp directly onto the aluminum extrusions</p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5410.jpg" alt="Car — IMG_5410">
-        <p class="caption">Photo #3</p>
+        <p class="caption">Originally, smooth wheels were planned but unexpected shipping delays necessitated falling back on an already available set. The larger wheel diameter
+          reduced effective torque and acceleration, but this was compensated for in code.
+        </p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5412.jpg" alt="Car — IMG_5412">
-        <p class="caption">Photo #4</p>
+        <p class="caption">While the rear wheels are directly driven by their respective motor, the front wheels are connected and locked together in rotation by a 4mm shaft
+          rotating in bearings that were press fitted into the bracket
+        </p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5414.jpg" alt="Car — IMG_5414">
-        <p class="caption">Photo #5</p>
+        <p class="caption">The space between the front and rear brackets is just enough to fit the battery pack and an electronics bay</p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5416.jpg" alt="Car — IMG_5416">
-        <p class="caption">Photo #6</p>
+        <p class="caption">The rear wing is not only for improved downforce (kdding), the white part to which it is attached is an alignment bracket that butts up against the ends of the
+          extrusions and locks in their alignment.
+        </p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5417.jpg" alt="Car — IMG_5417">
-        <p class="caption">Photo #7</p>
+        <p class="caption">The motor wires are managed using a textile sleeve and run through a port designed into the electronics bay cover</p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5421.jpg" alt="Car — IMG_5421">
-        <p class="caption">Photo #8</p>
+        <p class="caption">Each encoded motor require six connection to work properly. Two of these supply power to the motor, while to remaining four generate alternating high / low signals
+          as the rotor spins that can be read by a microcontroller. Pulses are continuously counted, and dividing the sum by the number of pulses generated in one revolution of the stator
+          yields the total number of revolutions. Dividing this value by the reduction factor of the gearbox then yields the output shaft revolution. Multiplying this by the circumference of the
+          wheel finally yields the distance traveled.
+        </p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5429.jpg" alt="Car — IMG_5429">
-        <p class="caption">Photo #9</p>
+        <p class="caption">A 16x2 LCD screen was used to create a basic user interface. Each of the four corners allow a unique field to be displayed, granted it is shorter than eight characters.</p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5433.jpg" alt="Car — IMG_5433">
-        <p class="caption">Photo #10</p>
+        <p class="caption">Contents of the electronics bay: A voltage regulator which supplies the motors with constant and predictable power regardless of how drained the batteries are.
+          An arduino nano which runs the project code. Two brushed motor controlled, one for each motor, which work on commands sent by the microcontroller </p>
       </div>
 
       <div class="media-item">
         <img src="car/IMG_5442.jpg" alt="Car — IMG_5442">
-        <p class="caption">Photo #11</p>
+        <p class="caption">Ready state, set for a very fast run</p>
       </div>
 
     </div>
